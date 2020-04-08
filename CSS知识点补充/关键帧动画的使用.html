@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #ff0000;
+        }
+
+        .box:hover {
+            /* animation: 执行的过渡动画的名字 执行的时间 速度 */
+            animation: test1 1s ease infinite;
+        }
+        @keyframes test1 {
+            from {
+                transform: translate(0,0);
+            }
+            25% {
+                transform: translate(200px,0);
+            }
+            50% {
+                transform: translate(200px,200px);
+            }
+            75% {
+                transform: translate(0,200px);
+            }
+            to {
+                transform: translate(0,0);
+            }
+        }
+        
+        @keyframes test2 {
+            0% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 0.25;
+            }
+            75% {
+                opacity: 0.75;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

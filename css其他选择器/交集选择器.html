@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文字一和文字四变成红色 */
+        div.one{
+            color: #f00;
+        }
+        /* 文字二和文字四变成红色 */
+        .one[title="text"] {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">文字内容一</div>
+    <p class="one" title="text">文字内容二</p>
+    <span class="one">文字内容三</span>
+    <div class="one" title="text">文字内容四</div>
+    <div title="text">文字内容五</div>
+</body>
+</html>

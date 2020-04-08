@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 400px;
+        }
+        input{
+            outline: none;
+        }
+        input:focus{
+            border-color: #4791ff;
+            border-style: solid;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.baidu.com"
+          target="_self"
+          method="POST"
+          enctype="multipart/form-data">
+    <fieldset>
+        <legend>必填信息</legend>
+    <!-- 手机输入框 -->
+    <div>
+        <label for="phone">手机：</label>
+        <input  type="text" 
+                maxlength="11" 
+                placeholder="请输入手机号"
+                autofocus
+                name="phone"
+                id="phone">
+    </div>
+    <!-- 密码输入框 -->
+    <div>
+        <label for="password">密码：</label>
+        <input  type="password" 
+                maxlength="18" 
+                placeholder="请输入密码"
+                name="password"
+                id="password">
+    </div>
+    <!-- 验证码输入框 -->
+    <div>
+        <label for="validate">验证码：</label>
+        <input  type="text" 
+                maxlength="6" 
+                placeholder="请输入验证码" 
+                name="validate"
+                id="validate">
+        <!-- button实现方式一：button -->
+        <!-- <button>获取验证码</button> -->
+        <!-- button实现方式二 ：input-->
+        <input type="button" value="获取验证码">
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>选填信息</legend>
+    <!-- 照片选择 -->
+    <div>
+        <label for="photo">照片:</label>
+        <input type="file" id="photo" name="photo">
+    </div>  
+    <!-- 性别选择 -->
+    <div>
+        <span>性别：</span>
+        <label for="male">男</label>
+        <input type="radio" name="sex" id="male" value="male" checked>
+        <label for="female">女</label>
+        <input type="radio" name="sex" id="female" value="female">
+    </div>
+    <!-- 性别选择 -->
+    <div>
+        <span>爱好：</span>
+        <label for="sing">唱歌</label>
+        <input type="checkbox" name="hobby" id="sing" value="sing">
+        <label for="dance">跳舞</label>
+        <input type="checkbox" name="hobby" id="dance" value="dance">
+        <label for="rap">rap</label>
+        <input type="checkbox" name="hobby" id="rap" value="rap"> 
+        <label for="baskteball">篮球</label>
+        <input type="checkbox" name="hobby" id="baskteball" value="basktebale">
+    </div>
+    <!-- 学历 -->
+    <div>
+        <span>学历：</span>
+        <select name="" id="" size="1">
+            <option value="0">小学</option>
+            <option value="1" selected>初中</option>
+            <option value="2">高中</option>
+        </select>
+    </div>
+    <!-- 简介 -->
+    <div>
+        <label for="intro">简介:</label>
+        <textarea name="intro" id="intro" cols="40" rows="5"></textarea>
+    </div>
+    </fieldset>
+
+
+    <!-- 重置按钮 -->
+    <!-- 前提
+            1. 前提一：type必须是reset类型（value值可以不写）
+            2.前提二：所有内容必须在一个表单中（form）
+    -->
+    <input type="reset">
+    <input type="submit">
+    </form>
+</body>
+</html>

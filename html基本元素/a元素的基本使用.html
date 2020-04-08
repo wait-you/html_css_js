@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>打开外部网站</p>
+    <!-- 1.基本使用 href ：超链接 -->
+    <a href="http://www.baidu.com">百度一下</a>
+    <br>
+    <!-- 
+        2.target：
+            _self（默认值）:自己
+            _blank:空白
+            和iframe一起使用时，才有效果：
+            _parent
+            _top
+            具体的name
+     -->
+     <a href="http://www.baidu.com" target="_blank">百度一下</a>
+     <p>打开内部网站</p>
+     <a href="练习1.html" target="_blank">打开练习网站</a> -->
+     <iframe 
+        src="http://www.baidu.com"
+        width="500"
+        height="600" 
+        frameborder="1">
+     </iframe>
+     <iframe 
+        src="练习1.html" 
+        width="500"
+        height="600"
+        frameborder="1">
+     </iframe>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父元素中的唯一子元素 */
+        /* only child */
+        body :only-child{
+            color: #ff0000;
+        }
+        /* only-of-type */
+        body :only-of-type{
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <span>文字内容1</span>
+        </p>
+        <div>文字内容2</div>
+    </div>
+    <div>
+        <strong>文字内容3</strong>
+        <a href="#">
+            <span>文字内容4</span>
+        </a>
+    </div>
+</body>
+</html>

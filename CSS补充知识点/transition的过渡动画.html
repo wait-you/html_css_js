@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+
+            margin: 100px auto 0;
+        
+            /*transition: 值1 对象名称 transition-property:transform/width/height/all
+                        值2 动画时间 transition-duration: 100ms(毫秒)
+                        值3 动画的变化速度 transition-timing-function: ease/ease-in
+                        值4 延迟/等待多久再执行这个动画 transition-delay; */
+            
+            transition: all 1s linear 2s;
+        }
+
+        .box:hover{
+            /* width: 200px; */
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-size: 20px;
+        }
+
+        .box {
+            /*
+             设置宽度的大小 
+             1.px：200px
+             2.em  
+                    * 自己有设置font-size，em相对自己的font-size
+                    * 自己没有设置font-size，em相对父元素的font-size
+            3.%: 相对于父元素的宽度
+             */
+            width: 200px;
+            height: 200px;
+            background-color: #ff0000;
+            color: #fff;
+
+            /* 
+            设置文字大小的单位
+            1.px：像素
+            2.em：相对于父元素字体的大小
+                * 2em：父元素(20px * 2 = 40px)
+            3.%: 用在不同的场景相对的是不一样的
+               : 在字体中，相对于父元素的字体
+            */
+            font-size: 2em ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box的内容</div>
+    </div>
+</body>
+</html>

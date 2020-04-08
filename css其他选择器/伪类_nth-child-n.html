@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* n : 0,1,2,3,4,5,6 */
+        /* 2n 所有的偶数 */
+        /* 2n 替换成 even */
+        /* 2n+1 奇数 */
+        /* 2n+1 替换成odd */
+        p:nth-child(-n+3){
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body> 
+    <div>
+        <p>文字内容1</p>
+        <p>文字内容2</p>
+        <p>文字内容3</p>
+        <p>文字内容4</p>
+        <p>文字内容5</p>
+        <p>文字内容6</p>
+        <p>文字内容7</p>
+        <p>文字内容8</p>
+    </div>
+    <p>
+        <span>文字内容1</span>
+        <span>文字内容2</span>
+        <span>文字内容3</span>
+        <span>文字内容4</span>
+        <span>文字内容5</span>
+        <span>文字内容6</span>
+        <span>文字内容7</span>
+        <span>文字内容8</span>
+    </p>
+    <div>
+        <strong>strong文字内容1</strong>
+        <strong>strong文字内容2</strong>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+
+        ul{
+            position: absolute;
+            display: none;
+            border: 1px solid #eaeaea;
+            left: 0;
+            top: 30px;
+        }
+
+        ul li{
+            margin: 5px;
+        }
+
+        .product .container span{
+            position: relative;
+        }
+
+        .product .container ul li:nth-child(3){
+            border-bottom: 1px solid #000000;
+        }
+        
+        .product .container ul li:nth-child(6){
+            border-bottom: 1px solid #000000;
+        }
+
+        .product .container ul li:nth-child(8){
+            border-bottom: 1px solid #000000;
+        }
+        .product .container span:hover+ul{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <a class="container" href="#">
+            <span>个人中心</span>
+            <ul>
+                <li>我的优惠卷</li>
+                <li>我的红包</li>
+                <li>我的考拉豆</li>
+                <li>账号管理</li>
+                <li>我的实名认证</li>
+                <li>我的发票抬头</li>
+                <li>我收藏的商品</li>
+                <li>我关注的品牌</li>
+                <li>售后管理</li>
+            </ul>
+        </a>
+    </div>
+</body>
+</html>

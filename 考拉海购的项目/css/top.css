@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* tabbar 相关样式 */
+#top .tabbar {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+}
+
+#top .tabbar .category {
+    float: left;
+    width: 164px;
+    background: linear-gradient(90deg,#f00,#ff3264);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#top .tabbar .category .lineicon {
+    margin-left: 20px;
+}
+
+#top .tabbar .category span {
+    margin-left: 20px;
+}
+
+#top .tabbar .categories {
+    position: absolute;;
+    width: 164px;
+    background: linear-gradient(90deg,#f00,#ff3264);
+    z-index: 1;
+}
+
+#top .tabbar .categories li {
+    height: 42px;
+    padding: 0 3px 0  2px;
+}
+
+#top .tabbar .categories li a {
+    display: block;
+    height: 41px;
+    line-height: 41px;
+    border-top: 1px solid #ff5160;
+}
+
+#top .tabbar .categories li a:hover {
+    background-color: #fff;
+}
+
+#top .tabbar .categories li a:hover img {
+    display: none;
+}
+
+#top .tabbar .categories li a:hover img.active {
+    display: inline;
+}
+
+#top .tabbar .categories li a:hover span {
+    color: #ff1e32;
+}
+
+#top .tabbar .categories li img {
+    position: relative;
+    top: -2px;
+    margin-left: 18px;
+}
+
+#top .tabbar .categories li img.active {
+    display: none;
+}
+
+#top .tabbar .categories li span {
+    color: #ffffff;
+}
+
+#top .tabbar .list {
+    float: left;
+    margin-left: 16px;
+}
+
+#top .tabbar .list li {
+    float: left;
+    margin-left: 10px;
+}
+
+#top .tabbar .list a {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+#top .tabbar .list a:hover {
+    color: #ff1e32;
+}
+
+#top .tabbar .list a.active {
+    color: #ff1e32;
+}
+
+/* 轮播图相关样式 */
+#top .banner {
+    position: relative;
+    overflow: hidden;
+    min-width: 1100px;
+}
+
+#top .banner .swiper {
+    display: inline-block;
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
+}
+
+/* #top .banner .swiper img {
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
+} */
+
+#top .banner .swiper:hover .control{
+    display: block;
+}
+
+#top .banner .swiper .control {
+    position: absolute;
+    display: none;
+    height: 68px;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+#top .banner .swiper .control i {
+    width: 34px;
+    height: 68px;
+    background-image: url("../assets/img/kl-sprite-01.png");
+}
+
+#top .banner .swiper .control .prev {
+    float: left;
+    margin-left: 174px;
+    background-position: -625px -68px;
+}
+
+#top .banner .swiper .control .next {
+    float: right; 
+    background-position: -670px -67px;
+}
+
+#top .banner .swiper .dots .dot {
+    position: absolute;
+    bottom: 5px;
+    left: 180px;
+}
+
+#top .banner .swiper .dots {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    width: 1100px;
+}
+
+#top .banner .swiper .dots i {
+    float: left;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: #fff;
+}
+
+#top .banner .swiper .dots i:hover{
+    background-color: #ff3264;
+}
+
+#top .banner .swiper .dots i.active {
+    background-color: #ff3264;
+}
+
+/* 轮播图下面的服务相关样式 */
+#top .banner .swiper .service {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+}
+
+#top .banner .service .blur {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../assets/img/banner.jpg) center bottom ;
+    filter: blur(8px);
+}
+
+#top .banner .service ul {
+    position: relative;
+    z-index: 1;
+    height: 45px;
+    line-height: 45px;
+}
+
+#top .banner .service ul li a{
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+#top .banner .service ul .download a {
+    float: right;
+}
+
+#top .banner .service ul li a:hover {
+    text-decoration: underline;
+}
