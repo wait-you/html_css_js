@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="https://www.baidu.com">
+</head>
+<body>
+    <input type="text">
+    <a href="/s?wd=">百度搜索</a>
+    <script>
+        window.onload = function () {
+            var input = document.getElementsByTagName('input')[0];
+            var a = document.getElementsByTagName('a')[0];
+
+            function getVal() {
+                var val = input.value;
+                a.setAttribute('href', a.href+val);
+            }
+
+            const debounce = (fn, wait) => {
+                let timer = null;
+                return ()=>{
+                    clearTimeout(timer);
+                    timer = setTimeout(()=>{
+                        fn();
+                    },wait)
+                }
+            }
+
+            const m_Debounce = debounce(getVal, 1000);
+
+            input.addEventListener('input', m_Debounce);
+        }
+    </script>
+</body>
+</html>
